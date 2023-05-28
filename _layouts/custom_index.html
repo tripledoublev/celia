@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/css/custom.css">
+    <script async type="text/javascript" src="assets/js/ShuffleMe.js"></script>
+
+    <!-- Add here the links to your CSS files, JavaScript, etc. -->
+</head>
+
+<body>
+    {% include header.html %}
+
+    <div class="page-content">
+   
+        {{ content }}
+   
+    </div>
+<script>
+    var shuffleContainers = document.getElementsByClassName('ShuffleMeContainer');
+
+var allDivs = document.querySelectorAll('.ShuffleMe.d-none');
+setTimeout(function() {
+    for (var j = 0; j < allDivs.length; j++) {
+    allDivs[j].classList.remove('d-none');
+    allDivs[j].classList.add('fade-in');
+    }
+}, 1000);
+
+if (shuffleContainers.length > 0) {
+  shuffleContainers[0].classList.remove('d-none');
+}
+
+</script>
+
+</body>
+
+</html>

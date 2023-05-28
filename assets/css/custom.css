@@ -1,0 +1,168 @@
+.ShuffleMe {
+    justify-content: center; /* align horizontal */
+  }
+  
+  img {
+      padding-top: 5%;
+      max-width: 100%;
+      height: auto;
+    padding-left: 0px;
+    align-self: center;
+  z-index:1;
+  }
+  
+  
+  .imgMid {
+      padding-top: 10px;
+      max-width: 47%;
+      height: auto;
+    padding-left: 20px;
+    align-self: start;
+  z-index:1;
+  }
+  .imgMida {
+      padding-top: 2vh;
+      max-width: 47%;
+      height: auto;
+    padding-left: 20px;
+    align-self: start;
+  z-index:1;
+  }
+  
+  .imgSmll {
+      padding-top: 50px;
+      max-width: 30%;
+      height: auto;
+    padding-left: 0px;
+    align-self: end;
+  z-index:1;
+  }
+  
+  .imgSmall {
+      padding-top: 100px;
+      max-width: 30%;
+      height: auto;
+    padding-left: 100px;
+    align-self: end;
+  z-index:1;
+  }
+
+
+  
+.textContainer {
+  overflow:visible;
+  width:auto;
+  height:auto;
+}
+
+#textINFO {
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+    overflow-y: auto;
+   z-index:+99;
+   position: fixed;
+display:none;
+width: 50%;
+top: 50%;
+ transform: translateY(-50%);
+left: 25%;
+background: rgba(105, 105, 105, 0);
+ color:black;
+ padding: 1% 1%;
+font-family: "Times New Roman";
+ font-size: calc(0.9vw + 0.9vh);
+  border:0px;
+  line-height: 1.5;
+  z-index:+50;
+}
+
+#textINFOen
+{ opacity:1;
+  display:none;}
+
+#textINFOfr
+{ opacity:1;
+  display:inline-block;}
+
+#textINFO:hover {
+ opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  #textINFO {
+    width: 70%;
+    left: 15%;
+     font-size: calc(1.1vw + 1.1vh);
+  }
+}
+
+
+a:link {
+  text-decoration: none;
+  color: black;
+  }
+
+a:hover
+{  opacity: 0.8;
+  font-style: italic;
+ border: 0;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+#lgSwitch {
+  text-decoration: none;
+opacity: 1;
+transition-duration: 0.4s;
+font-family: "Times New Roman", Times, serif;
+  margin: 0px 0px 0px 0px;
+  font-size: calc(1vw + 1vh);
+   padding: 0px 0px;
+background-color: transparent;
+   border-radius: 0;
+   color:black;
+   border:0px;
+
+}
+#lgSwitch:hover {
+  opacity: 0.8;
+  font-style: italic;
+ border: 0;
+  color: black;
+
+}
+#lgSwitch:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.d-none {
+  display: none !important;
+}
+
+
+img.ShuffleMe {
+  opacity: 0;
+}
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ShuffleMeContainer .ShuffleMe:first-child img {
+  padding-top: 0;
+}
