@@ -166,3 +166,22 @@ img.ShuffleMe {
 .ShuffleMeContainer .ShuffleMe:first-child img {
   padding-top: 0;
 }
+
+.links {
+  display: flex;
+  justify-content: right;
+}
+
+.links a {
+  margin-right: 10px;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav {
+  position: fixed;
+  width: 98%;
+  padding-left: 2%;
+}
