@@ -108,9 +108,9 @@ a:link {
 
 a:hover
 {  opacity: 0.8;
-  font-style: italic;
- border: 0;
+   border: 0;
   color: black;
+  text-decoration: underline;
 }
 
 a:visited {
