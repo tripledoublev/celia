@@ -8,21 +8,13 @@ function start() {
   
   function shuffle(){
       var shuffleContainers = document.getElementsByClassName('ShuffleMeContainer');
-      console.log(shuffleContainers); // Add this line for debugging
       var i = 0;
 
       for (i = 0; i < shuffleContainers.length; i++) {
           shuffleDivs = shuffleContainers[i].getElementsByClassName('ShuffleMe');
-          console.log(shuffleDivs); // Add this line for debugging
           suffleElements(shuffleDivs);
       }
-      // after shuffle, remove d-none
-      var allDivs = document.querySelectorAll('.ShuffleMe.d-none');
-      for (var j = 0; j < allDivs.length; j++) {
-          allDivs[j].classList.remove('d-none');
-          allDivs[j].classList.add('fade-in');
-      }
-      shuffleContainers[0].classList.remove('d-none');
+      shuffleComplete = true; 
   }
 
   function suffleElements(divs){
@@ -41,23 +33,30 @@ function start() {
       a.parentNode.insertBefore(a,b);
       afterA.parentNode.insertBefore(b,afterA);
   }
-
-  var slider = document.getElementById("myRange");
-  if (slider) { // Check if slider is not null
-      var output = document.getElementById("op");
-      var opaciti = document.getElementById("textINFO");
-      output.innerHTML = slider.value / 100.0; 
-
-      slider.oninput = function() {
-        var updated = this.value / 100;
-        output.innerHTML = updated;
-        opaciti.style.background = "rgba(205,205,205," + updated + ")";
+ // Mutation observer to watch for DOM changes and remove d-none after shuffling
+ var observer = new MutationObserver(function (mutations) {
+    if (shuffleComplete) {
+      var allDivs = document.querySelectorAll('.ShuffleMe.d-none');
+      for (var j = 0; j < allDivs.length; j++) {
+        allDivs[j].classList.remove('d-none');
+        allDivs[j].classList.add('fade-in');
       }
-  }
+      var shuffleContainers = document.getElementsByClassName('ShuffleMeContainer');
+      if (shuffleContainers.length > 0) {
+        shuffleContainers[0].classList.remove('d-none');
+      }
+      observer.disconnect(); // Stop observing once done
+    }
+  });
 
-  // calling the shuffle function after the DOM is fully loaded
+  // Observe the entire document
+  observer.observe(document, {
+    childList: true,
+    subtree: true,
+  });
+
+  // Calling the shuffle function after the DOM is fully loaded
   shuffle();
-
-};
+}
 
 start();
