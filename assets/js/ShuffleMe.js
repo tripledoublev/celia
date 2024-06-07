@@ -1,8 +1,8 @@
 
 
-document.addEventListener("DOMContentLoaded", function(){
-  // your existing code
-  var hauteur = window.innerHeight;
+function start() {
+ console.log("DOM fully loaded and parsed");
+    var hauteur = window.innerHeight;
   var largeur = window.innerWidth;
 
   
@@ -58,4 +58,6 @@ document.addEventListener("DOMContentLoaded", function(){
   // calling the shuffle function after the DOM is fully loaded
   shuffle();
 
-});
+};
+
+start();
