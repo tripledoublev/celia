@@ -6,6 +6,50 @@ layout: custom_index
 title: Celia Perrin Sidarous
 ---
 <div class="d-none ShuffleMeContainer">
+<div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/CPS_t_o_02_yeux_HI.webp"></div>
+<div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/Celia-Edition-006.webp"></div>
+<div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/04_CPS_2023_Foreman_web.webp"></div>
+<div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/CPS_Foreman_Marginalia_2023_01_HI.webp"></div>
+<div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/CPS_t_o_01_coqui_HI.webp"></div>
+<div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/CPS_Foreman_Marginalia_2023_02_HI.webp"></div>
+<div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/CPS_Foreman_Marginalia_2023_11_HI.webp"></div>
+<div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/01_CPS_2023_Foreman_web.webp"></div>
+<div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/CPS_Foreman_Marginalia_2023_09_HI.webp"></div>
+<div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/03_CPS_2023_Foreman_web.webp"></div>
+<div class="d-none ShuffleMe imgMida"><img src="assets/img/2024/webp/medium/2F6BB2D8-36F6-49EA-9C04-0E212EA18192.webp"></div>
+<div class="d-none ShuffleMe imgMida"><img src="assets/img/2024/webp/medium/CPS_Foreman_Marginalia_2023_06_HI.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/L1009895.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/CPS_Foreman_Marginalia_2023_10_HI.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/CPS_Foreman_Marginalia_2023_08_HI.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/CPS_Foreman_Marginalia_2023_03_HI.webp"></div>
+<div class="d-none ShuffleMe imgMida"><img src="assets/img/2024/webp/medium/Composite_3.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/06_CPS_2023_Foreman_web.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/L1009864.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/CPS_Foreman_Marginalia_2023_05_HI.webp"></div>
+<div class="d-none ShuffleMe imgMida"><img src="assets/img/2024/webp/medium/000082370009.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/569BE334-5E6A-48F3-BC85-EB4D30709B47.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/L1009833.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/CPS_Foreman_Marginalia_2023_07_HI.webp"></div>
+<div class="d-none ShuffleMe imgMida"><img src="assets/img/2024/webp/medium/L1009822.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/07_CPS_2023_Foreman_web.webp"></div>
+<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/L1009847.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/PBG-Celia Perrin Sidarous-019.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/PBG-Celia Perrin Sidarous-016.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/Celia-Edition-002.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/PBG-Celia Perrin Sidarous-020.webp"></div>
+<div class="d-none ShuffleMe imgSmll"><img src="assets/img/2024/webp/small/L1009859.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/L1009889.webp"></div>
+<div class="d-none ShuffleMe imgSmll"><img src="assets/img/2024/webp/small/L1009874.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/CPS_Foreman_Marginalia_2023_12_HI.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/L1009861.webp"></div>
+<div class="d-none ShuffleMe imgSmll"><img src="assets/img/2024/webp/small/L1009890.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/PBG-Celia Perrin Sidarous-006.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/L1009869.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/PBG-Celia Perrin Sidarous-013.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/L1009897.webp"></div>
+<div class="d-none ShuffleMe imgSmll"><img src="assets/img/2024/webp/small/PBG-Celia Perrin Sidarous-012b.webp"></div>
+<div class="d-none ShuffleMe imgSmll"><img src="assets/img/2024/webp/small/PBG-Celia Perrin Sidarous-007.webp"></div>
+<div class="d-none ShuffleMe imgSmall"><img src="assets/img/2024/webp/small/L1009857.webp"></div>
 <div class="d-none ShuffleMe"><img src="assets/img/CPS_09.webp"></div>
 <div class="d-none ShuffleMe"><img src="assets/img/CPS_20.webp"></div>
 <div class="d-none ShuffleMe"><img src="assets/img/CPS_21.webp"></div>
