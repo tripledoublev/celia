@@ -169,7 +169,10 @@ img.ShuffleMe {
     opacity: 1;
   }
 }
-
+.ShuffleMeContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
 .ShuffleMeContainer .ShuffleMe:first-child img {
   padding-top: 0;
 }
