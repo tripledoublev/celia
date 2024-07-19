@@ -10,7 +10,6 @@
       height: auto;
     padding-left: 0px;
     align-self: center;
-  z-index:1;
   }
   
   
@@ -31,7 +30,6 @@
       height: auto;
     padding-left: 20px;
     align-self: start;
-  z-index:1;
   }
   
   .imgSmll {
@@ -40,7 +38,6 @@
       height: auto;
     padding-left: 25px;
     align-self: end;
-  z-index:1;
   }
   
   .imgSmall {
@@ -49,7 +46,6 @@
       height: auto;
     padding-left: 100px;
     align-self: end;
-  z-index:1;
   }
 
 
