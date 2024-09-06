@@ -16,7 +16,6 @@ title: Celia Perrin Sidarous
 <div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/01_CPS_2023_Foreman_web.webp"></div>
 <div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/CPS_Foreman_Marginalia_2023_09_HI.webp"></div>
 <div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/03_CPS_2023_Foreman_web.webp"></div>
-<div class="d-none ShuffleMe imgMida"><img src="assets/img/2024/webp/medium/2F6BB2D8-36F6-49EA-9C04-0E212EA18192.webp"></div>
 <div class="d-none ShuffleMe imgMida"><img src="assets/img/2024/webp/medium/CPS_Foreman_Marginalia_2023_06_HI.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/L1009895.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/CPS_Foreman_Marginalia_2023_10_HI.webp"></div>
@@ -27,7 +26,6 @@ title: Celia Perrin Sidarous
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/L1009864.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/CPS_Foreman_Marginalia_2023_05_HI.webp"></div>
 <div class="d-none ShuffleMe imgMida"><img src="assets/img/2024/webp/medium/000082370009.webp"></div>
-<div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/569BE334-5E6A-48F3-BC85-EB4D30709B47.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/L1009833.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/2024/webp/medium/CPS_Foreman_Marginalia_2023_07_HI.webp"></div>
 <div class="d-none ShuffleMe imgMida"><img src="assets/img/2024/webp/medium/L1009822.webp"></div>
@@ -84,10 +82,6 @@ title: Celia Perrin Sidarous
 <div class="d-none ShuffleMe"><img src="assets/img/CPS_flotsam_2021_14_lo.webp"></div>
 <div class="d-none ShuffleMe"><img src="assets/img/CPS_flotsam_2021_16_lo.webp"></div>
 <div class="d-none ShuffleMe"><img src="assets/img/NBF-21.webp"></div>
-<div class="d-none ShuffleMe"><img src="assets/img/NBF-24.webp"></div>
-<div class="d-none ShuffleMe"><img src="assets/img/NBF-38.webp"></div>
-<div class="d-none ShuffleMe"><img src="assets/img/NBF-41.webp"></div>
-<div class="d-none ShuffleMe imgSmll"><img src="assets/img/CPS_10.webp"></div>
 <div class="d-none ShuffleMe imgSmall"><img src="assets/img/CPS_13.webp"></div>
 <div class="d-none ShuffleMe imgSmll"><img src="assets/img/CPS_14.webp"></div>
 <div class="d-none ShuffleMe imgSmall"><img src="assets/img/CPS_15.webp"></div>
@@ -102,18 +96,13 @@ title: Celia Perrin Sidarous
 <div class="d-none ShuffleMe imgSmll"><img src="assets/img/CPS_48.webp"></div>
 <div class="d-none ShuffleMe imgSmall"><img src="assets/img/CPS_49.webp"></div>
 <div class="d-none ShuffleMe imgSmll"><img src="assets/img/CPS_50.webp"></div>
-<div class="d-none ShuffleMe imgSmall"><img src="assets/img/CPS_archiviste_04_lo.webp"></div>
 <div class="d-none ShuffleMe imgSmll"><img src="assets/img/CPS_ATSOA_PL_2018_16_lo.webp"></div>
 <div class="d-none ShuffleMe imgSmall"><img src="assets/img/CPS_Contact_15_lo.webp"></div>
 <div class="d-none ShuffleMe imgSmll"><img src="assets/img/CPS_esker_22.webp"></div>
 <div class="d-none ShuffleMe imgSmall"><img src="assets/img/CPS_esker_23.webp"></div>
 <div class="d-none ShuffleMe imgSmll"><img src="assets/img/CPS_flotsam_2021_04_lo.webp"></div>
-<div class="d-none ShuffleMe imgSmall"><img src="assets/img/CPS_flotsam_2021_09_lo.webp"></div>
 <div class="d-none ShuffleMe imgSmll"><img src="assets/img/CPS_flotsam_2021_10_lo.webp"></div>
 <div class="d-none ShuffleMe imgSmall"><img src="assets/img/CPS_flotsam_2021_13_lo.webp"></div>
-<div class="d-none ShuffleMe imgSmll"><img src="assets/img/NBF-33.webp"></div>
-<div class="d-none ShuffleMe imgSmall"><img src="assets/img/NBF-35.webp"></div>
-<div class="d-none ShuffleMe imgSmll"><img src="assets/img/NBF-40.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/CPS_03_2015.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/CPS_06_2015.webp"></div>
 <div class="d-none ShuffleMe imgMida"><img src="assets/img/CPS_07_2015.webp"></div>
@@ -139,11 +128,5 @@ title: Celia Perrin Sidarous
 <div class="d-none ShuffleMe imgMida"><img src="assets/img/NBF-2.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/NBF-13.webp"></div>
 <div class="d-none ShuffleMe imgMida"><img src="assets/img/NBF-25.webp"></div>
-<div class="d-none ShuffleMe imgMid"><img src="assets/img/NBF-26.webp"></div>
-<div class="d-none ShuffleMe imgMida"><img src="assets/img/NBF-37.webp"></div>
-<div class="d-none ShuffleMe imgMid"><img src="assets/img/NBF-39.webp"></div>
-<div class="d-none ShuffleMe imgMid"><img src="assets/img/NBF-42.webp"></div>
-<div class="d-none ShuffleMe imgMida"><img src="assets/img/NBF-46.webp"></div>
-<div class="d-none ShuffleMe imgMid"><img src="assets/img/NBF-47.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/NBF.webp"></div>
 </div>
