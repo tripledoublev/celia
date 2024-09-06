@@ -14,7 +14,7 @@ Afin de maintenir toujours le même lien, le CV doit être nommé ainsi:
 ## Mise à jour de la biographie
 
 Les fichiers contenant la biographie sont nommés ainsi:
-- `[en.markdown](https://github.com/tripledoublev/celia/blob/main/en.markdown)`
-- `[fr.markdown](https://github.com/tripledoublev/celia/blob/main/fr.markdown)`
+- [en.markdown](https://github.com/tripledoublev/celia/blob/main/en.markdown)
+- [fr.markdown](https://github.com/tripledoublev/celia/blob/main/fr.markdown)
 
 Il suffit de mettre à jour le contenu du fichier en question en clickant sur le bouton `✏️` (`edit`) en haut à droite de la page.
