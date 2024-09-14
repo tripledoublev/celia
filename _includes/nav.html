@@ -4,8 +4,8 @@
         <a rel="author" href="{{ site.baseurl }}/">Celia Perrin Sidarous
         </a>
     </h1>
-    <nav>
-        <div class="links">
+    <nav class="desktop-nav">
+        <div class="links desktop-press-link">
             <a class="page-link" href="{{ site.baseurl }}/press/">
                 {%if page.url == "/fr/"%}
                 Presse
@@ -16,11 +16,25 @@
             </a>
 
         </div>
-        <div class="lang-links">
+        <div class="desktop-lang-links links">
             <a class="page-link" href="{{ site.baseurl }}/fr/">Fr</a>
             <a class="page-link" href="{{ site.baseurl }}/en/">En</a>
-
         </div>
     </nav>
 </div>
+<nav class="mobile-nav">
+<div class="links press-link">
+    <a class="page-link" href="{{ site.baseurl }}/press/">
+        {%if page.url == "/fr/"%}
+        Presse
+        {%elsif page.url =="/en/"%}
+        Press
+        {%endif%}
+    </a>
+</div>
+<div class="lang-links">
+    <a class="page-link" href="{{ site.baseurl }}/fr/">Fr</a>
+    <a class="page-link" href="{{ site.baseurl }}/en/">En</a>
 
+</div>
+</nav>
