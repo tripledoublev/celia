@@ -35,7 +35,7 @@ Tous les fichiers sur le site se retrouvent dans le dossier `assets`:
     ├── img  
     └── press  
 ```
-Une fois un fichier ajouté un dossier, il suffit d'utiliser la syntaxe markdown afin de lié l'image ou le document en y insérant sa source. Pour savoir qu'elle chemin d'accès utiliser, il est possible de consulter les liens existants. 
+Une fois un fichier ajouté un dossier, il suffit d'utiliser la syntaxe markdown afin de lier l'image ou le document en y insérant sa source. Pour savoir qu'elle chemin d'accès utiliser, il est possible de consulter les liens existants. 
 
 ## Formattage du texte en Markdown
 
