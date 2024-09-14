@@ -18,3 +18,41 @@ Les fichiers contenant la biographie sont nommés ainsi:
 - [fr.markdown](https://github.com/tripledoublev/celia/blob/main/fr.markdown)
 
 Il suffit de mettre à jour le contenu du fichier en question en clickant sur le bouton `✏️` (`edit`) en haut à droite de la page.
+
+## Structure des dossiers
+
+Pour ajouter des fichiers, il suffit de les mettre dans le dossier approprié.
+
+Tous les fichiers sur le site se retrouvent dans le dossier `assets`:
+
+```
+└─ assets  
+    ├── CV  
+    ├── css  
+    ├── fonts  
+    │   ├── grandhaven  
+    │   └── spectral  
+    ├── img  
+    └── press  
+```
+Une fois un fichier ajouté un dossier, il suffit d'utiliser la syntaxe markdown afin de lier l'image ou le document en y insérant sa source. Pour savoir qu'elle chemin d'accès utiliser, il est possible de consulter les liens existants. 
+
+## Formattage du texte en Markdown
+
+Syntaxe de base:
+
+| Element            | Markdown Syntax                             |
+|--------------------|---------------------------------------------|
+| Heading            | `# H1`<br>`## H2`<br>`### H3`               |
+| Bold               | `**bold text**`                             |
+| Italic             | `*italicized text*`                         |
+| Blockquote         | `> blockquote`                              |
+| Ordered List       | `1. First item`<br>`2. Second item`<br>`3. Third item` |
+| Unordered List     | `- First item`<br>`- Second item`<br>`- Third item` |
+| Code               | `` `code` ``                                |
+| Horizontal Rule    | `---`                                       |
+| Link               | `[title](https://www.example.com)`           |
+| Image              | `![alt text](image.jpg)`                    |
+
+
+- [Syntaxe avancée](https://www.markdownguide.org/cheat-sheet/#extended-syntax)
