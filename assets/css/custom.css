@@ -70,7 +70,7 @@ left: 25%;
 background: rgba(105, 105, 105, 0);
  color:black;
  padding: 1% 1%;
-font-family: "Times New Roman";
+font-family: "Spectral";
  font-size: calc(0.9vw + 0.9vh);
   border:0px;
   line-height: 1.5;
@@ -117,6 +117,14 @@ a:visited {
 
 .site-title {
   width: 50%;
+  margin-top: 0.5rem;
+  font-size: 2rem !important;
+}
+
+@media screen and (min-width: 700px) {
+  .site-title {
+    font-size: 3rem !important;
+  }
 }
 
 
@@ -124,7 +132,7 @@ a:visited {
   text-decoration: none;
 opacity: 1;
 transition-duration: 0.4s;
-font-family: "Times New Roman", Times, serif;
+  font-family: "Spectral", Times, serif;
   margin: 0px 0px 0px 0px;
   font-size: calc(1vw + 1vh);
    padding: 0px 0px;
@@ -175,7 +183,7 @@ img.ShuffleMe {
 }
 
 .lang-links, .links {
-  font-family:"Times New Roman", Times, serif;
+  font-family:"Grand Haven", Times, serif;
   display: flex;
   padding-right: 2%;
   padding-top: 0.75%;
@@ -185,6 +193,10 @@ img.ShuffleMe {
   justify-content: right;
 }
 
+.lang-links a {
+  font-size: 2rem !important;
+}
+
 .links {
   justify-content: center;
   width: 25%;
@@ -192,11 +204,12 @@ img.ShuffleMe {
 
 .lang-links a, .links a {
   margin-right: 25px;
-  font-size: 1.22rem;
+  font-size: 2.22rem;
 }
 
 h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Grand Haven", Times, serif;
+  font-size: 3rem;
 }
 
 .nav {
@@ -210,6 +223,7 @@ h1 {
 }
 
 li {
+  font-family: "Spectral";
   list-style-type: none;
   font-size: calc(0.75vw + 0.75vh);
   margin: 1rem;
