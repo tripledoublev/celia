@@ -1,3 +1,5 @@
+{% assign press_text = page.lang == "en" ? "Press" : "Presse" %}
+
 <div class="nav">
     <h1 class="site-title">
     
@@ -7,12 +9,7 @@
     <nav class="desktop-nav">
         <div class="links desktop-press-link">
             <a class="page-link" href="{{ site.baseurl }}/press/">
-                {% if page.lang == "fr" %}
-                    Presse
-                {%else "%}
-                    Press
-                {%endif%}
-
+              {{ press_text }}
             </a>
 
         </div>
@@ -25,11 +22,7 @@
 <nav class="mobile-nav">
 <div class="links press-link">
     <a class="page-link" href="{{ site.baseurl }}/press/">
-        {% if page.lang == "fr" %}
-            Presse
-        {%else%}
-            Press
-        {%endif%}
+      {{ press_text }}
     </a>
 </div>
 <div class="lang-links">
