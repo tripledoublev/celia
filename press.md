@@ -2,6 +2,7 @@
 layout: page
 title: Press
 permalink: /press/
+lang: fr
 ---
 
 <ul class='press'>

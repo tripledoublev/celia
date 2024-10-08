@@ -1,4 +1,9 @@
-{% assign press_text = page.lang == "en" ? "Press" : "Presse" %}
+{% if page.lang == "fr" %}
+  {% assign press_text = "Presse" %}
+{% else %}
+  {% assign press_text = "Press" %}
+{% endif %}
+
 
 <div class="nav">
     <h1 class="site-title">
