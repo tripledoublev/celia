@@ -7,10 +7,10 @@
     <nav class="desktop-nav">
         <div class="links desktop-press-link">
             <a class="page-link" href="{{ site.baseurl }}/press/">
-                {%if page.url == "/fr/"%}
-                Presse
-                {%elsif page.url =="/en/"%}
-                Press
+                {% if page.lang == "fr" %}
+                    Presse
+                {%else "%}
+                    Press
                 {%endif%}
 
             </a>
@@ -25,10 +25,10 @@
 <nav class="mobile-nav">
 <div class="links press-link">
     <a class="page-link" href="{{ site.baseurl }}/press/">
-        {%if page.url == "/fr/"%}
-        Presse
-        {%elsif page.url =="/en/"%}
-        Press
+        {% if page.lang == "fr" %}
+            Presse
+        {%else%}
+            Press
         {%endif%}
     </a>
 </div>
