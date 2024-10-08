@@ -2,6 +2,7 @@
 layout: page
 title: Français
 permalink: /fr/
+lang: fr
 ---
 
 <div class="textContainer"><div id="textINFO" style="display: inline-block;">
