@@ -89,7 +89,7 @@ font-family: "Spectral";
  opacity: 1;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 925px) {
   #textINFO {
     width: 70%;
     left: 15%;
@@ -120,12 +120,22 @@ a:visited {
   line-height: 1;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 925px) {
   .site-title {
-    font-size: 3rem !important;
+    font-size: 2rem !important;
+    padding-left: 1%;
   }
 }
-
+@media screen and (min-width: 501px) and (max-width: 924px) {
+  .site-title, .lang-links a, .links a {
+    font-size: 1.5rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .site-title, .lang-links a, .links a {
+    font-size: 1.25rem !important;
+  }
+}
 
 #lgSwitch {
   text-decoration: none;
@@ -185,7 +195,6 @@ img.ShuffleMe {
   font-family:"Grand Haven", Times, serif;
   display: flex;
   padding-right: 2%;
-  padding-top: 0.75%;
 }
 
 .lang-links {
@@ -206,7 +215,7 @@ img.ShuffleMe {
 
 h1 {
   font-family: "Grand Haven", Times, serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .nav {
@@ -248,7 +257,7 @@ ul li a p {
 }
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 925px) {
   ul {
     flex-direction: column;
     align-items: flex-start;
@@ -274,7 +283,7 @@ nav {
 .press-link {
   display: none;
 }
-@media (max-width: 700px) {
+@media (max-width: 925px) {
   .desktop-press-link, .desktop-lang-link, .desktop-nav {
     display: none;
 }
