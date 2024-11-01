@@ -126,7 +126,6 @@ lang: fr
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/CPS_flotsam_2021_11_lo.webp"></div>
 <div class="d-none ShuffleMe imgMida"><img src="assets/img/CPS_flotsam_2021_12_lo.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/CPS_flotsam_2021_15_lo.webp"></div>
-<div class="d-none ShuffleMe imgMida"><img src="assets/img/NBF-2.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/NBF-13.webp"></div>
 <div class="d-none ShuffleMe imgMida"><img src="assets/img/NBF-25.webp"></div>
 <div class="d-none ShuffleMe imgMid"><img src="assets/img/NBF.webp"></div>

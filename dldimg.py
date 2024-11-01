@@ -93,7 +93,6 @@ html_doc = """
           <div class="ShuffleMe imgMid"><img src="imgs/CPS_flotsam_2021_11_lo.webp"></div>
           <div class="ShuffleMe imgMida"><img src="imgs/CPS_flotsam_2021_12_lo.webp"></div>
           <div class="ShuffleMe imgMid"><img src="imgs/CPS_flotsam_2021_15_lo.webp"></div>
-          <div class="ShuffleMe imgMida"><img src="imgs/NBF-2.webp"></div>
           <div class="ShuffleMe imgMid"><img src="imgs/NBF-13.webp"></div>
           <div class="ShuffleMe imgMida"><img src="imgs/NBF-25.webp"></div>
           <div class="ShuffleMe imgMid"><img src="imgs/NBF-26.webp"></div>
