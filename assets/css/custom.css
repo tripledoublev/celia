@@ -203,7 +203,7 @@ img.ShuffleMe {
 }
 
 .links {
-  justify-content: center;
+  justify-content: space-between;
   width: 25%;
 }
 
@@ -275,30 +275,36 @@ nav {
   width: 50%;
   justify-content: space-between
 }
-
+.desktop-lang-links {
+  justify-content: end;
+}
+.desktop-nav-link a:first-child {
+  padding-right: 15%;
+}
 .press {
   padding-top: 2%;
   padding-left:0.5%;
 }
-.press-link {
+.nav-link {
   display: none;
 }
 @media (max-width: 925px) {
-  .desktop-press-link, .desktop-lang-link, .desktop-nav {
+  .desktop-nav-link, .desktop-lang-link, .desktop-nav {
     display: none;
 }
-  .press-link, .lang-links {
+  .nav-link, .lang-links {
     display: block;
     position: fixed;
   }
-  .press-link {
+  .nav-link {
     bottom: 5px;
     left: 0;
     padding-left: 2%;
+    width: 100%;
   }
   .lang-links {
     bottom: 5px;
-    left: 60%;
+    right: 0;
   }
   .lang-links a {
     margin-right: 5px;
