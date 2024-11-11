@@ -37,6 +37,15 @@ Tous les fichiers sur le site se retrouvent dans le dossier `assets`:
 ```
 Une fois un fichier ajouté un dossier, il suffit d'utiliser la syntaxe markdown afin de lier l'image ou le document en y insérant sa source. Pour savoir qu'elle chemin d'accès utiliser, il est possible de consulter les liens existants. 
 
+## Fonctionnement des branches
+
+Le projet utilise deux branches principales pour le déploiement:
+
+- **staging**: Les changements poussés sur la branche `staging` sont déployés sur [https://tripledoublev.github.io/celia/](https://tripledoublev.github.io/celia/).
+- **main**: Les changements poussés sur la branche `main` sont déployés sur [https://www.celia-perrin-sidarous.com/](https://www.celia-perrin-sidarous.com/).
+
+Il faut s'assurer d'effectuer les modifications sur la branche appropriée en fonction de l'environnement de déploiement souhaité.
+
 ## Formattage du texte en Markdown
 
 Syntaxe de base:
