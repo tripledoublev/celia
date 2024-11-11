@@ -12,32 +12,41 @@
         </a>
     </h1>
     <nav class="desktop-nav">
-        <div class="links desktop-press-link">
+        <div class="links desktop-nav-link">
             <a class="page-link" href="{{ site.baseurl }}/press/">
               {{ press_text }}
             </a>
-
+            {% if page.lang == "fr" %}
+              <a class="page-link" href="{{ site.baseurl }}/fr/">Bio</a>
+            {% else %}
+              <a class="page-link" href="{{ site.baseurl }}/en/">Bio</a>
+            {% endif %}
         </div>
         <div class="desktop-lang-links links">
           {% if page.lang == "fr" %}
-            <a class="page-link" href="{{ site.baseurl }}/fr/">Fr</a>
-          {% else %}
             <a class="page-link" href="{{ site.baseurl }}/en/">En</a>
+          {% else %}
+            <a class="page-link" href="{{ site.baseurl }}/fr/">Fr</a>
           {% endif %}
         </div>
     </nav>
 </div>
 <nav class="mobile-nav">
-<div class="links press-link">
+<div class="links nav-link">
     <a class="page-link" href="{{ site.baseurl }}/press/">
       {{ press_text }}
     </a>
+    {% if page.lang == "fr" %}
+      <a class="page-link" href="{{ site.baseurl }}/fr/">Bio</a>
+    {% else %}
+      <a class="page-link" href="{{ site.baseurl }}/en/">Bio</a>
+    {% endif %}
 </div>
 <div class="lang-links">
   {% if page.lang == "fr" %}
-    <a class="page-link" href="{{ site.baseurl }}/fr/">Fr</a>
-  {% else %}
     <a class="page-link" href="{{ site.baseurl }}/en/">En</a>
+  {% else %}
+    <a class="page-link" href="{{ site.baseurl }}/fr/">Fr</a>
   {% endif %}
 </div>
 </nav>
