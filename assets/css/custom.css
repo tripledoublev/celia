@@ -282,6 +282,7 @@ nav {
   padding-right: 15%;
 }
 .press {
+  max-width: 90vw;
   padding-top: 2%;
   padding-left:0.5%;
 }
