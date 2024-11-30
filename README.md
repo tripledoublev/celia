@@ -61,7 +61,7 @@ Syntaxe de base:
 | Code               | `` `code` ``                                |
 | Horizontal Rule    | `---`                                       |
 | Link               | `[title](https://www.example.com)`           |
-| Image              | `![alt text](image.jpg)`                    |
+| Image              | `![alt text](image.webp)`                    |
 
 
 - [Syntaxe avancée](https://www.markdownguide.org/cheat-sheet/#extended-syntax)
