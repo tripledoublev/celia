@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fonts.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/project.css">
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/project.js"></script>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include nav.html %}
+
+    <div class="page-content">
+        <div class="project-header">
+            <img src="{{ page.header_image }}" alt="{{ page.title }}">
+        </div>
+      
+        <div class="project-description">
+            <h2 style="margin-top:2rem;">
+                {{ page.title }}
+            </h2>
+
+            {{ content }}
+        </div>
+        <div class="project-gallery">
+            {% for image in page.gallery %}
+            <div class="gallery-item">
+                <img src="{{ image.src }}" alt="{{ image.caption }}" data-caption="{{ image.caption }}">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="fullscreen-overlay" class="d-none">
+        <img id="fullscreen-image" src="" alt="">
+        <div id="fullscreen-caption"></div>
+        <button id="close-overlay">Close</button>
+    </div>
+
+</body>
+
+</html>
