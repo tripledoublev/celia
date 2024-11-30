@@ -7,6 +7,7 @@ lang: fr
 ---
 
 <ul class="project-list" style="margin-top:5rem;">
+  {% assign sorted_projects = site.projects | sort: 'year' | reverse %}
   {% for project in site.projects %}
   <li>
     <h2>
