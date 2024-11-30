@@ -1,7 +1,9 @@
 {% if page.lang == "fr" %}
   {% assign press_text = "Presse" %}
+  {% assign projects_text = "Projets" %}
 {% else %}
   {% assign press_text = "Press" %}
+  {% assign projects_text = "Projects" %}
 {% endif %}
 
 
@@ -13,6 +15,9 @@
     </h1>
     <nav class="desktop-nav">
         <div class="links desktop-nav-link">
+            <a class="page-link" href="{{ site.baseurl }}/projets/">
+              {{ projects_text }}
+            </a>
             <a class="page-link" href="{{ site.baseurl }}/press/">
               {{ press_text }}
             </a>
@@ -33,6 +38,9 @@
 </div>
 <nav class="mobile-nav">
 <div class="links nav-link">
+    <a class="page-link" href="{{ site.baseurl }}/projets/">
+        {{ projects_text }}
+      </a>
     <a class="page-link" href="{{ site.baseurl }}/press/">
       {{ press_text }}
     </a>
