@@ -10,7 +10,7 @@ lang: fr
   {% for project in site.projects %}
   <li>
     <h2>
-      <a href="{{ project.url }}">{{ project.title }} ({{ project.year }})</a>
+      <a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }} ({{ project.year }})</a>
     </h2>
   </li>
   {% endfor %}
