@@ -2,7 +2,7 @@
 layout: project
 title: L'archiviste
 year: 2019
-header_image: /assets/img/projects/larchiviste/header.jpg
+header_image: /assets/img/projects/larchiviste/header.webp
 gallery_folder: assets/img/projects/larchiviste
 lang: fr
 ---

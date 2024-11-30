@@ -2,7 +2,7 @@
 layout: project
 title: Our Dust
 year: 2023-2024
-header_image: /assets/img/projects/our_dust/header.jpg
+header_image: /assets/img/projects/our_dust/header.webp
 gallery_folder: assets/img/projects/our_dust
 lang: en
 ---
