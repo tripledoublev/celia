@@ -303,9 +303,6 @@ nav {
 .desktop-lang-links {
   justify-content: end;
 }
-.desktop-nav-link a:first-child {
-  padding-right: 15%;
-}
 .press {
   max-width: 90vw;
   padding-top: 2%;
