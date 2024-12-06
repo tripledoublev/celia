@@ -29,6 +29,10 @@ github_username:  madamecelia
 # Build settings
 theme: minima
 
+collections:
+  projects:
+    output: true
+
 
 
 # Exclude from processing.
