@@ -65,9 +65,35 @@
 }
 
 #close-overlay {
-    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
     padding: 10px 20px;
     background: white;
     border: none;
     cursor: pointer;
+}
+
+#close-overlay:hover, .nav-icon:hover {
+    text-decoration: underline;
+}
+
+
+.nav-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+#prev-image {
+    left: 20px;
+}
+
+#next-image {
+    right: 20px;
 }
