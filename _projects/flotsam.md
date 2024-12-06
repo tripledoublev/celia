@@ -2,7 +2,7 @@
 layout: project
 title: Flotsam
 year: 2021
-header_image: /assets/img/projects/flotsam/header.webp
+header_image: assets/img/projects/flotsam/header.webp
 gallery_folder: assets/img/projects/flotsam
 lang: en
 ---
