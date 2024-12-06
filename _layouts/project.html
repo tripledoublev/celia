@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/project.css">
-    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/project.js"></script>
     {% include head.html %}
 </head>
 
@@ -17,7 +16,7 @@
 
     <div class="page-content">
         <div class="project-header">
-            <img src="{{ page.header_image }}" alt="{{ page.title }}">
+            <img src="{{ site.baseurl }}/{{ page.header_image }}" alt="{{ page.title }}">
         </div>
       
         <div class="project-description">
@@ -37,10 +36,15 @@
     </div>
 
     <div id="fullscreen-overlay" class="d-none">
+        <span id="prev-image" class="nav-icon">&lt;</span>
         <img id="fullscreen-image" src="" alt="">
+        <span id="next-image" class="nav-icon">&gt;</span>
         <div id="fullscreen-caption"></div>
-        <button id="close-overlay">Close</button>
+        <button id="close-overlay">
+            X
+        </button>
     </div>
+    <script defer type="text/javascript" src="{{ site.baseurl }}/assets/js/project.js"></script>
 
 </body>
 
