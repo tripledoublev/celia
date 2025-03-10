@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const overlay = document.getElementById('fullscreen-overlay');
     const fullscreenImage = document.getElementById('fullscreen-image');
     const fullscreenPdf = document.getElementById('fullscreen-pdf');
-    const fullscreenCaption = document.getElementById('fullscreen-caption');
+    const fullscreenCaption = document.getElementById('fullscreen-caption-text');
     const closeOverlay = document.getElementById('close-overlay');
     const prevImage = document.getElementById('prev-image');
     const nextImage = document.getElementById('next-image');
