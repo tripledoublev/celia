@@ -15,16 +15,16 @@
     </h1>
     <nav class="desktop-nav">
         <div class="links desktop-nav-link">
-            <a class="page-link" href="{{ site.baseurl }}/projets/">
+            <a class="page-link {% if page.url contains '/projets/' %}active{% endif %}" href="{{ site.baseurl }}/projets/">
               {{ projects_text }}
             </a>
-            <a class="page-link" href="{{ site.baseurl }}/press/">
+            <a class="page-link {% if page.url contains '/press/' %}active{% endif %}" href="{{ site.baseurl }}/press/">
               {{ press_text }}
             </a>
             {% if page.lang == "fr" %}
-              <a class="page-link" href="{{ site.baseurl }}/fr/">Bio</a>
+              <a class="page-link {% if page.url contains '/fr/' and page.url != '/fr/projets/' and page.url != '/fr/press/' %}active{% endif %}" href="{{ site.baseurl }}/fr/">Bio</a>
             {% else %}
-              <a class="page-link" href="{{ site.baseurl }}/en/">Bio</a>
+              <a class="page-link {% if page.url contains '/en/' and page.url != '/en/projets/' and page.url != '/en/press/' %}active{% endif %}" href="{{ site.baseurl }}/en/">Bio</a>
             {% endif %}
         </div>
         <div class="desktop-lang-links links">
@@ -38,16 +38,16 @@
 </div>
 <nav class="mobile-nav">
 <div class="links nav-link">
-    <a class="page-link" href="{{ site.baseurl }}/projets/">
+    <a class="page-link {% if page.url contains '/projets/' %}active{% endif %}" href="{{ site.baseurl }}/projets/">
         {{ projects_text }}
       </a>
-    <a class="page-link" href="{{ site.baseurl }}/press/">
+    <a class="page-link {% if page.url contains '/press/' %}active{% endif %}" href="{{ site.baseurl }}/press/">
       {{ press_text }}
     </a>
     {% if page.lang == "fr" %}
-      <a class="page-link" href="{{ site.baseurl }}/fr/">Bio</a>
+      <a class="page-link {% if page.url contains '/fr/' and page.url != '/fr/projets/' and page.url != '/fr/press/' %}active{% endif %}" href="{{ site.baseurl }}/fr/">Bio</a>
     {% else %}
-      <a class="page-link" href="{{ site.baseurl }}/en/">Bio</a>
+      <a class="page-link {% if page.url contains '/en/' and page.url != '/en/projets/' and page.url != '/en/press/' %}active{% endif %}" href="{{ site.baseurl }}/en/">Bio</a>
     {% endif %}
 </div>
 <div class="lang-links">
