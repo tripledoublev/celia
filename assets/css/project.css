@@ -1,6 +1,7 @@
 .project-header img {
     width: 100%;
     height: auto;
+    padding-top: 0;
 }
 
 
@@ -54,7 +55,12 @@
     z-index: 1000;
 }
 
-#fullscreen-overlay img {
+#fullscreen-pdf {
+    width: 70%;
+    height: 80%;
+}
+
+#fullscreen-overlay img, #fullscreen-pdf {
     max-width: 90%;
     max-height: 80%;
 }

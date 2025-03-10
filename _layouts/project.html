@@ -29,20 +29,25 @@
         <div class="project-gallery">
             {% for image in page.gallery %}
             <div class="gallery-item">
-                <img src="{{ image.src }}" alt="{{ image.caption }}" data-caption="{{ image.caption }}">
+                {% if image.type == "pdf" and image.pdf_src %}
+                <img src="{{ image.src }}" alt="{{ image.caption }}" data-type="pdf" data-pdf="{{ image.pdf_src }}">
+                {% else %}
+                <img src="{{ image.src }}" alt="{{ image.caption }}" data-caption="{{ image.caption }}" data-type="image">
+                {% endif %}
             </div>
             {% endfor %}
         </div>
+        
+        
     </div>
 
     <div id="fullscreen-overlay" class="d-none">
         <span id="prev-image" class="nav-icon">&lt;</span>
         <img id="fullscreen-image" src="" alt="">
+        <iframe id="fullscreen-pdf" src="" class="d-none" frameborder="0"></iframe>
         <span id="next-image" class="nav-icon">&gt;</span>
         <div id="fullscreen-caption"></div>
-        <button id="close-overlay">
-            X
-        </button>
+        <button id="close-overlay">X</button>
     </div>
     <script defer type="text/javascript" src="{{ site.baseurl }}/assets/js/project.js"></script>
 
