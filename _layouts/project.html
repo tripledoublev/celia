@@ -20,7 +20,7 @@
         </div>
       
         <div class="project-description">
-            <h2 style="margin-top:2rem;">
+            <h2>
                 {{ page.title }}
             </h2>
 
@@ -46,7 +46,9 @@
         <img id="fullscreen-image" src="" alt="">
         <iframe id="fullscreen-pdf" src="" class="d-none" frameborder="0"></iframe>
         <span id="next-image" class="nav-icon">&gt;</span>
-        <div id="fullscreen-caption"></div>
+        <div id="fullscreen-caption">
+            <p id="fullscreen-caption-text"></p>
+        </div>
         <button id="close-overlay">X</button>
     </div>
     <script defer type="text/javascript" src="{{ site.baseurl }}/assets/js/project.js"></script>
