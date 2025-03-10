@@ -11,6 +11,10 @@
     padding-left: 0px;
     align-self: center;
   }
+
+  .page-link.active {
+    text-decoration: underline;
+  }
   
   
   .imgMid {
