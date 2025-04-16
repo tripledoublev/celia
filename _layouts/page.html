@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang }}">
 
 <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="../assets/css/fonts.css">
-    <link rel="stylesheet" href="../assets/main.css">
-    <link rel="stylesheet" href="../assets/css/custom.css">
+    <title>{{ page.title }} - {{ 'global.title' | t }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fonts.css?v={{ site.time | date: '%s' }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css?v={{ site.time | date: '%s' }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css?v={{ site.time | date: '%s' }}">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/project.css?v={{ site.time | date: '%s' }}">
 
-    <script async type="text/javascript" src="../assets/js/Buttons.js"></script>
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/Buttons.js"></script>
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/language-switcher.js"></script>
     {% include head.html %}
     <!-- Add here the links to your CSS files, JavaScript, etc. -->
 </head>
@@ -22,7 +24,16 @@
    
     </div>
 
+    <!-- Fullscreen overlay for PDFs -->
+    <div id="fullscreen-overlay" class="d-none">
+        <iframe id="fullscreen-pdf" src="" class="d-none" frameborder="0"></iframe>
+        <button id="close-overlay">X</button>
+    </div>
 
+    <!-- Add press.js script for PDF handling if this is the press page -->
+    {% if page.permalink == '/presse/' or page.permalink == '/en/press/' %}
+    <script defer type="text/javascript" src="{{ site.baseurl }}/assets/js/press.js"></script>
+    {% endif %}
 </body>
 
 </html>

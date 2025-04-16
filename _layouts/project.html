@@ -1,44 +1,66 @@
+{% assign current_lang = page.lang | default: site.default_lang %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ current_lang }}">
 
 <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} - {{ 'global.title' | t }}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fonts.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/project.css">
+
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/language-switcher.js"></script>
     {% include head.html %}
 </head>
 
 <body>
     {% include nav.html %}
 
-    <div class="page-content">
-        <div class="project-header">
-            <img src="{{ site.baseurl }}/{{ page.header_image }}" alt="{{ page.title }}">
-        </div>
-      
-        <div class="project-description">
-            <h2>
-                {{ page.title }}
-            </h2>
-
-            {{ content }}
-        </div>
-        <div class="project-gallery">
-            {% for image in page.gallery %}
-            <div class="gallery-item">
-                {% if image.type == "pdf" and image.pdf_src %}
-                <img src="{{ image.src }}" alt="{{ image.caption }}" data-type="pdf" data-pdf="{{ image.pdf_src }}">
+    <div class="page-content fade-in">
+        <div class="project-content">
+          <div class="project-images">
+            {% if page.header_image %}
+              <img src="{{ site.baseurl }}/{{ page.header_image }}" alt="{{ page.title }}" class="header-image">
+            {% endif %}
+            
+            {% if page.images %}
+              {% for image in page.images %}
+                {% if image.size %}
+                  <img src="{{ site.baseurl }}{{ image.url }}" class="{{ image.size }}" alt="{{ page.title }} - {{ forloop.index }}">
                 {% else %}
-                <img src="{{ image.src }}" alt="{{ image.caption }}" data-caption="{{ image.caption }}" data-type="image">
+                  <img src="{{ site.baseurl }}{{ image }}" alt="{{ page.title }} - {{ forloop.index }}">
                 {% endif %}
+              {% endfor %}
+            {% endif %}
+            
+            {% if page.gallery %}
+              {% for item in page.gallery %}
+                {% if item.src %}
+                  <img src="{{ site.baseurl }}/{{ item.src }}" alt="{{ item.caption | default: page.title }}" class="gallery-image">
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          </div>
+          
+          <div class="project-text">
+            <h1>{{ page.title }}</h1>
+            
+            <div class="project-details">
+              <p class="year">{{ page.year }}</p>
+              
+              {% if page.medium %}
+                <p class="medium">{{ page.medium }}</p>
+              {% endif %}
+              
+              {% if page.dimensions %}
+                <p class="dimensions">{{ page.dimensions }}</p>
+              {% endif %}
             </div>
-            {% endfor %}
+            
+            {{ content }}
+          </div>
         </div>
-        
-        
     </div>
 
     <div id="fullscreen-overlay" class="d-none">

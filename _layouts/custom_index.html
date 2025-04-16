@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang }}">
 
 <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/main.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <title>{{ 'global.title' | t }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fonts.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
 
-    <script async type="text/javascript" src="assets/js/ShuffleMe.js"></script>
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/ShuffleMe.js"></script>
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/language-switcher.js"></script>
     {% include head.html %}
     <!-- Add here the links to your CSS files, JavaScript, etc. -->
 </head>

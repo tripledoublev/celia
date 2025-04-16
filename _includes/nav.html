@@ -1,60 +1,92 @@
-{% if page.lang == "fr" %}
-  {% assign press_text = "Presse" %}
-  {% assign projects_text = "Projets" %}
-{% else %}
-  {% assign press_text = "Press" %}
-  {% assign projects_text = "Projects" %}
-{% endif %}
+{% assign current_lang = page.lang %}
+{% assign languages = site.data.languages %}
 
+{% if current_lang == "fr" %}
+  {% assign projects_text = "Projets" %}
+  {% assign press_text = "Presse" %}
+  {% assign bio_text = "Bio" %}
+  {% assign projects_url = "/projets/" %}
+  {% assign press_url = "/presse/" %}
+  {% assign bio_url = "/bio/" %}
+{% else %}
+  {% assign projects_text = "Projects" %}
+  {% assign press_text = "Press" %}
+  {% assign bio_text = "Bio" %}
+  {% assign projects_url = "/en/projects/" %}
+  {% assign press_url = "/en/press/" %}
+  {% assign bio_url = "/en/bio/" %}
+{% endif %}
 
 <div class="nav">
     <h1 class="site-title">
-    
-        <a rel="author" href="{{ site.baseurl }}/">Celia Perrin Sidarous
-        </a>
+        <a rel="author" href="{{ site.baseurl }}/">Celia Perrin Sidarous</a>
     </h1>
     <nav class="desktop-nav">
         <div class="links desktop-nav-link">
-            <a class="page-link {% if page.url contains '/projets/' %}active{% endif %}" href="{{ site.baseurl }}/projets/">
-              {{ projects_text }}
+            <a class="page-link {% if page.url contains projects_url or page.identifier == 'projects' %}active{% endif %}" href="{{ site.baseurl }}{{ projects_url }}">
+              {% if 'navigation.projects' | t != "[Translation missing: navigation.projects]" %}
+                {{ 'navigation.projects' | t }}
+              {% else %}
+                {{ projects_text }}
+              {% endif %}
             </a>
-            <a class="page-link {% if page.url contains '/press/' %}active{% endif %}" href="{{ site.baseurl }}/press/">
-              {{ press_text }}
+            <a class="page-link {% if page.url contains press_url or page.identifier == 'press' %}active{% endif %}" href="{{ site.baseurl }}{{ press_url }}">
+              {% if 'navigation.press' | t != "[Translation missing: navigation.press]" %}
+                {{ 'navigation.press' | t }}
+              {% else %}
+                {{ press_text }}
+              {% endif %}
             </a>
-            {% if page.lang == "fr" %}
-              <a class="page-link {% if page.url contains '/fr/' and page.url != '/fr/projets/' and page.url != '/fr/press/' %}active{% endif %}" href="{{ site.baseurl }}/fr/">Bio</a>
-            {% else %}
-              <a class="page-link {% if page.url contains '/en/' and page.url != '/en/projets/' and page.url != '/en/press/' %}active{% endif %}" href="{{ site.baseurl }}/en/">Bio</a>
-            {% endif %}
+            <a class="page-link {% if page.url == bio_url or page.identifier == 'bio' %}active{% endif %}" href="{{ site.baseurl }}{{ bio_url }}">
+              {% if 'navigation.bio' | t != "[Translation missing: navigation.bio]" %}
+                {{ 'navigation.bio' | t }}
+              {% else %}
+                {{ bio_text }}
+              {% endif %}
+            </a>
         </div>
         <div class="desktop-lang-links links">
-          {% if page.lang == "fr" %}
-            <a class="page-link" href="{{ site.baseurl }}/en/">En</a>
-          {% else %}
-            <a class="page-link" href="{{ site.baseurl }}/fr/">Fr</a>
-          {% endif %}
+          {% for lang_obj in languages %}
+            {% assign lang_code = lang_obj[0] %}
+            {% assign lang_data = lang_obj[1] %}
+            {% if lang_code != current_lang %}
+              <a class="page-link" href="{{ lang_code | alternate_url }}">{{ lang_data.icon | upcase }}</a>
+            {% endif %}
+          {% endfor %}
         </div>
     </nav>
 </div>
 <nav class="mobile-nav">
-<div class="links nav-link">
-    <a class="page-link {% if page.url contains '/projets/' %}active{% endif %}" href="{{ site.baseurl }}/projets/">
-        {{ projects_text }}
+  <div class="links nav-link">
+      <a class="page-link {% if page.url contains projects_url or page.identifier == 'projects' %}active{% endif %}" href="{{ site.baseurl }}{{ projects_url }}">
+        {% if 'navigation.projects' | t != "[Translation missing: navigation.projects]" %}
+          {{ 'navigation.projects' | t }}
+        {% else %}
+          {{ projects_text }}
+        {% endif %}
       </a>
-    <a class="page-link {% if page.url contains '/press/' %}active{% endif %}" href="{{ site.baseurl }}/press/">
-      {{ press_text }}
-    </a>
-    {% if page.lang == "fr" %}
-      <a class="page-link {% if page.url contains '/fr/' and page.url != '/fr/projets/' and page.url != '/fr/press/' %}active{% endif %}" href="{{ site.baseurl }}/fr/">Bio</a>
-    {% else %}
-      <a class="page-link {% if page.url contains '/en/' and page.url != '/en/projets/' and page.url != '/en/press/' %}active{% endif %}" href="{{ site.baseurl }}/en/">Bio</a>
-    {% endif %}
-</div>
-<div class="lang-links">
-  {% if page.lang == "fr" %}
-    <a class="page-link" href="{{ site.baseurl }}/en/">En</a>
-  {% else %}
-    <a class="page-link" href="{{ site.baseurl }}/fr/">Fr</a>
-  {% endif %}
-</div>
+      <a class="page-link {% if page.url contains press_url or page.identifier == 'press' %}active{% endif %}" href="{{ site.baseurl }}{{ press_url }}">
+        {% if 'navigation.press' | t != "[Translation missing: navigation.press]" %}
+          {{ 'navigation.press' | t }}
+        {% else %}
+          {{ press_text }}
+        {% endif %}
+      </a>
+      <a class="page-link {% if page.url == bio_url or page.identifier == 'bio' %}active{% endif %}" href="{{ site.baseurl }}{{ bio_url }}">
+        {% if 'navigation.bio' | t != "[Translation missing: navigation.bio]" %}
+          {{ 'navigation.bio' | t }}
+        {% else %}
+          {{ bio_text }}
+        {% endif %}
+      </a>
+  </div>
+  <div class="lang-links">
+    {% for lang_obj in languages %}
+      {% assign lang_code = lang_obj[0] %}
+      {% assign lang_data = lang_obj[1] %}
+      {% if lang_code != current_lang %}
+        <a class="page-link" href="{{ lang_code | alternate_url }}">{{ lang_data.icon | upcase }}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
 </nav>

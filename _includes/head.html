@@ -1,1 +1,16 @@
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ 'global.description' | t }}">
+<meta name="keywords" content="{{ 'global.keywords' | t }}">
+<meta name="site-baseurl" content="{{ site.baseurl }}">
+
+{% assign languages = site.data.languages %}
+{% for lang_obj in languages %}
+  {% assign lang_code = lang_obj[0] %}
+  {% assign lang_data = lang_obj[1] %}
+  <link rel="alternate" hreflang="{{ lang_code }}" href="{{ site.url }}{{ lang_code | alternate_url }}">
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}/">
+
+<!-- Favicon -->
+<link rel="icon" href="{{ site.baseurl }}/assets/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="{{ site.baseurl }}/assets/favicon.ico" type="image/x-icon">
