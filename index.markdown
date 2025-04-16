@@ -5,6 +5,7 @@
 layout: custom_index
 title: Celia Perrin Sidarous
 lang: fr
+identifier: home
 ---
 <div class="d-none ShuffleMeContainer">
 <div class="d-none ShuffleMe"><img src="assets/img/2024/webp/large/CPS_t_o_02_yeux_HI.webp"></div>

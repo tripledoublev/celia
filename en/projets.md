@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Projects
-permalink: /projets/
-lang: fr
+permalink: /en/projects/
+lang: en
 identifier: projects
-
 ---
 
 <ul class="project-list" style="margin-top:5rem;">
@@ -17,4 +16,4 @@ identifier: projects
     </h2>
   </li>
   {% endfor %}
-</ul>
+</ul> 
