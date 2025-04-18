@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Projects
-permalink: /projets/
-lang: fr
+permalink: /en/projects/
+lang: en
 identifier: projects
-
 ---
 
 {% include project_list.html %} 
