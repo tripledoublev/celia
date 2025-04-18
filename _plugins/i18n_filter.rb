@@ -42,6 +42,11 @@ module Jekyll
         # This is likely a top-level page without a language prefix
         page_name = current_url.sub('/', '').sub('/', '')
         
+        # Special handling for projects
+        if page['identifier'] == 'projects'
+          return lang == site_default_lang ? '/projets/' : '/en/projects/'
+        end
+        
         # Check if an equivalent page exists in the target language
         target_page = site.pages.find { |p| p['lang'] == lang && p['identifier'] == page['identifier'] }
         return target_page ? target_page.url : "/#{lang}/"
