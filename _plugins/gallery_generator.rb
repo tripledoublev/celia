@@ -26,9 +26,11 @@ class GalleryGenerator < Jekyll::Generator
 
               pdf_src = nil
               if is_pdf_preview
-                pdf_path = File.join(pdf_folder, "pdf.pdf")
-                if File.exist?(pdf_path)
-                  pdf_src = File.join(site.baseurl, project.data['gallery_folder'], 'pdf', 'pdf.pdf')
+                # Look for any PDF file in the pdf folder
+                pdf_files = Dir.glob(File.join(pdf_folder, "*.pdf"))
+                if pdf_files.any?
+                  pdf_filename = File.basename(pdf_files.first)
+                  pdf_src = File.join(site.baseurl, project.data['gallery_folder'], 'pdf', pdf_filename)
                 end
               end
 
