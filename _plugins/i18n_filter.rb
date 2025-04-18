@@ -32,6 +32,10 @@ module Jekyll
       
       # Handle subpages
       if current_url.start_with?("/#{current_lang}/")
+        # If switching to default language, remove the language prefix
+        if lang == site_default_lang
+          return current_url.sub("/#{current_lang}/", "/")
+        end
         # Replace current language with target language
         return current_url.sub("/#{current_lang}/", "/#{lang}/")
       elsif current_url.match?(/^\/[^\/]+\/$/)
