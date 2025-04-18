@@ -50,7 +50,8 @@ second pregnancy.
 Within your universe of evanescent arrangements, you make the fragments you took
 from the whole as whole as the whole; you make the fragments fluctuate, fluid,
 mutable and mercurial—within yet beyond, but of and from and for the same time.
-Ceremonial. Equally eternal.
+Ceremonial. Equally eternal.  
+
 Yours sincerely, and always,
 Merray
 
