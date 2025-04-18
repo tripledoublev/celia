@@ -6,57 +6,6 @@ lang: fr
 identifier: press
 ---
 
-<style>
-    .press {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 20px;
-        list-style-type: none;
-    }
-    
-    .press li {
-        padding: 15px;
-        background-color: white;
-    }
-    
-    .press li a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        text-decoration: none;
-    }
-    
-    .press li a:hover {
-        text-decoration: underline;
-    }
-    
-    .press li img {
-        width: auto;
-        padding-top: 0;
-        margin-bottom: 15px;
-    }
-    
-    .press li p {
-        text-align: center;
-        margin: auto 0 0 0;
-        font-size: 0.9rem;
-    }
-    
-    @media (max-width: 1200px) {
-        .press {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-    
-    @media (max-width: 900px) {
-        .press {
-            grid-template-columns: 1fr;
-        }
-    }
-</style>
-
 <ul class='press'>
     <li>
         <a href="{{ site.baseurl }}/assets/press/01_CPS_Eclaireuses_Dominique_Sirois-Rouleau_Celia_Perrin_Sidarous_VU_2022.pdf">
