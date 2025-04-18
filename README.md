@@ -1,11 +1,9 @@
-#  Instructions
+# Instructions
 
 ## Mise à jour du CV
 
-Pour mettre à jour le CV, il faut simplement ajouter le nouveau CV au format PD dans le dossier `CV` situé dans le dossier `assets`
+Pour mettre à jour le CV, il faut simplement ajouter le nouveau CV au format PDF dans le dossier `CV` situé dans le dossier `assets`
 [Lien vers le dossier CV](https://github.com/tripledoublev/celia/tree/main/assets/CV)
-
-- Add files
 
 Afin de maintenir toujours le même lien, le CV doit être nommé ainsi:
 - `CPS_CV_EN.pdf`  
@@ -14,28 +12,148 @@ Afin de maintenir toujours le même lien, le CV doit être nommé ainsi:
 ## Mise à jour de la biographie
 
 Les fichiers contenant la biographie sont nommés ainsi:
-- [en.markdown](https://github.com/tripledoublev/celia/blob/main/en.markdown)
-- [fr.markdown](https://github.com/tripledoublev/celia/blob/main/fr.markdown)
+- EN: dans le dossier `en`: [bio.md](https://github.com/tripledoublev/celia/blob/main/en/bio.md)
+- FR: [bio.md](https://github.com/tripledoublev/celia/blob/main/bio.md)
 
-Il suffit de mettre à jour le contenu du fichier en question en clickant sur le bouton `✏️` (`edit`) en haut à droite de la page.
+Il suffit de mettre à jour le contenu du fichier en question en cliquant sur le bouton `✏️` (`edit`) en haut à droite de la page.
 
 ## Structure des dossiers
 
-Pour ajouter des fichiers, il suffit de les mettre dans le dossier approprié.
-
-Tous les fichiers sur le site se retrouvent dans le dossier `assets`:
+Le site est organisé selon une structure Jekyll standard avec des dossiers spécifiques pour différents types de contenu :
 
 ```
-└─ assets  
-    ├── CV  
-    ├── css  
-    ├── fonts  
-    │   ├── grandhaven  
-    │   └── spectral  
-    ├── img  
-    └── press  
+.
+├── _config.yml           # Configuration principale du site
+├── _config_staging.yml   # Configuration pour l'environnement de staging
+├── _data/               # Données et traductions
+├── _includes/           # Composants réutilisables
+│   ├── head.html        # En-tête HTML
+│   ├── nav.html         # Navigation
+│   ├── project_list.html # Liste des projets
+│   └── image_gallery.html # Galerie d'images
+├── _layouts/            # Templates de pages
+│   ├── page.html        # Template de page standard
+│   ├── project.html     # Template de page de projet
+│   └── custom_index.html # Template de page d'accueil
+├── _plugins/            # Plugins Jekyll personnalisés
+├── _posts/              # Articles de blog
+├── _projects/           # Contenu des projets
+├── assets/              # Ressources statiques
+│   ├── CV/             # Fichiers CV
+│   ├── css/            # Feuilles de style
+│   ├── js/             # Scripts JavaScript
+│   ├── icons/          # Icônes
+│   ├── img/            # Images générales
+│   │   |── projects/   # Images des projets
+|   |   └── press       # Image de presse
+│   ├── press/          # PDF de presse
+│   └── fonts/          # Polices de caractères
+├── en/                  # Contenu en anglais
+├── scripts/             # Scripts utilitaires
+├── dldimg.py           # Script de téléchargement d'images
+├── index.md            # Page d'accueil
+├── bio.md              # Biographie
+├── presse.md           # Page de presse
+└── projets.md          # Liste des projets
 ```
-Une fois un fichier ajouté un dossier, il suffit d'utiliser la syntaxe markdown afin de lier l'image ou le document en y insérant sa source. Pour savoir qu'elle chemin d'accès utiliser, il est possible de consulter les liens existants. 
+
+### Organisation des projets
+
+Les projets sont gérés avec une structure spécifique :
+- Les métadonnées et le contenu textuel des projets sont définis dans le dossier `_projects/`
+- Les images sont organisées dans des sous-dossiers par projet dans `assets/img/projects/`
+
+### Création d'un nouveau projet
+
+Pour créer un nouveau projet, suivez ces étapes :
+
+1. **Créer le dossier des images**
+   - Créez un nouveau dossier dans `assets/img/projects/` avec le nom du projet (en minuscules, sans espaces)
+   - Exemple : `assets/img/projects/mon-nouveau-projet`
+
+2. **Ajouter les images**
+   - Placez toutes les images du projet dans le dossier créé
+   - L'image d'en-tête doit être nommée `header.webp` et placée à la racine du dossier
+   - Toutes les images doivent être au format WebP pour une meilleure performance
+   - La galerie d'images sera générée automatiquement à partir des images dans le dossier
+   - Pour les PDFs, créez un dossier `pdf` et placez-y les fichiers PDF
+   - Pour les captures d'écran de PDFs, nommez-les avec le préfixe `pdf_`
+
+3. **Créer les sous-titres (optionnel)**
+   - Créez un fichier `captions.yml` dans le dossier du projet pour les sous-titres des images
+   - Structure du fichier :
+   ```yaml
+   image1.webp: "Description de l'image 1"
+   image2.webp: "Description de l'image 2"
+   ```
+
+4. **Créer le fichier du projet**
+   - Créez un fichier `nom-du-projet.md` dans le dossier `_projects`
+   - Utilisez le front matter suivant :
+   ```markdown
+   ---
+   layout: project
+   title: "Titre du projet"
+   year: 2024
+   header_image: assets/img/projects/nom-du-projet/header.webp
+   gallery_folder: assets/img/projects/nom-du-projet
+   lang: fr
+   ---
+   
+   Contenu du projet en Markdown
+   ```
+
+### Utilisation de header_image
+
+L'image d'en-tête (`header.webp`) est utilisée de plusieurs façons :
+- Elle apparaît en haut de la page du projet
+- Elle est utilisée comme vignette dans la liste des projets
+- Elle doit être de haute qualité et représentative du projet
+- Dimensions recommandées : 1920x1080 pixels
+- Format : WebP pour une meilleure performance
+
+## Gestion des médias
+
+### Images de presse
+- Placer les images dans `assets/img/press/`
+- Format : WebP
+- Nommage : descriptif et en minuscules
+
+### PDFs de presse
+- Placer les fichiers PDF dans `assets/press/`
+- Nommage : descriptif et en minuscules
+
+### Structure des projets
+```
+assets/img/projects/
+└── nom-du-projet/
+    ├── header.webp          # Image d'en-tête
+    ├── image1.webp          # Images de la galerie
+    ├── image2.webp
+    ├── pdf/                 # Dossier pour les PDFs
+    │   └── document.pdf
+    ├── pdf.webp             # Image pour les PDFs
+    └── captions.yml         # Sous-titres des images 
+```
+
+## Internationalisation
+
+### Structure des fichiers
+- Français : fichiers à la racine
+- Anglais : fichiers dans le dossier `/en/`
+- Les fichiers doivent avoir le même nom dans les deux langues
+
+### Front Matter
+```markdown
+---
+layout: project
+title: "Titre du projet"
+year: 2024
+header_image: assets/img/projects/nom-du-projet/header.webp
+gallery_folder: assets/img/projects/nom-du-projet
+lang: fr  # ou 'en' pour la version anglaise
+---
+```
 
 ## Guide d'internationalisation (i18n)
 
@@ -150,3 +268,50 @@ Syntaxe de base:
 
 
 - [Syntaxe avancée](https://www.markdownguide.org/cheat-sheet/#extended-syntax)
+
+## Configuration du développement
+
+### Prérequis
+- Ruby 2.7 ou supérieur
+- Bundler
+- Jekyll
+
+### Installation
+1. Cloner le dépôt
+2. Installer les dépendances :
+```bash
+bundle install
+```
+
+### Lancement du serveur local
+```bash
+bundle exec jekyll serve
+```
+Le site sera disponible à l'adresse `http://localhost:4000`
+
+## Optimisation des images
+
+### Conversion en WebP
+Toutes les images doivent être converties en format WebP pour une meilleure performance. 
+
+### Taille et qualité recommandées
+- Images d'en-tête (header.webp) : 1920x1080 pixels
+- Qualité WebP : 80-85% pour un bon compromis qualité/taille
+
+## Workflow de déploiement
+
+### Branches
+- `main` : Production (https://www.celia-perrin-sidarous.com/)
+- `staging` : Pré-production (https://tripledoublev.github.io/celia/)
+
+### Processus de déploiement
+1. Créer une branche de fonctionnalité depuis `staging`
+2. Faire les modifications
+3. Tester localement avec `bundle exec jekyll serve`
+4. Soumettre une pull request vers `staging`
+5. Après validation, merger dans `staging`
+6. Une fois testé en pré-production, merger `staging` dans `main`
+
+### Fichiers de configuration
+- `_config.yml` : Configuration principale
+- `_config_staging.yml` : Configuration spécifique à l'environnement de staging
