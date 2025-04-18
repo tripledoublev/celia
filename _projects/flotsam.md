@@ -16,4 +16,5 @@ self, intending to draw the memory back to a dulling marker, to pull up the rope
 There is something else here. Previously deemed derelict, maybe mistaken as noise, fog, murk, mollusks. A dredging here of what's always been there. Submerged things become gathering places for sea moss, seaweed,
 brightly colored comb clips, a wide hinge, a clam, a translucent ghost or a string of bubbles, pearls from a round orifice-come-live. By gathering on an erosive surface they become evocative of something forgotten. Remember:
 Object is a natal tongue; the tongue a cork jacket. We got here by floating.
-- Danielle St-Amour, January 2021
+
+— Danielle St-Amour, January 2021
