@@ -8,6 +8,7 @@
   {% assign projects_url = "/projets/" %}
   {% assign press_url = "/presse/" %}
   {% assign bio_url = "/bio/" %}
+  {% assign home_url = "/" %}
 {% else %}
   {% assign projects_text = "Projects" %}
   {% assign press_text = "Press" %}
@@ -15,11 +16,12 @@
   {% assign projects_url = "/en/projects/" %}
   {% assign press_url = "/en/press/" %}
   {% assign bio_url = "/en/bio/" %}
+  {% assign home_url = "/en/" %}
 {% endif %}
 
 <div class="nav">
     <h1 class="site-title">
-        <a rel="author" href="{{ site.baseurl }}/">Celia Perrin Sidarous</a>
+        <a rel="author" href="{{ site.baseurl }}{{ home_url }}">Celia Perrin Sidarous</a>
     </h1>
     <nav class="desktop-nav">
         <div class="links desktop-nav-link">
