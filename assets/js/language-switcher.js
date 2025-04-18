@@ -33,18 +33,15 @@ document.addEventListener('DOMContentLoaded', function() {
           return;
         }
         
-        // Handle individual project pages (has a project name after /projects/ or /projets/)
-        if ((normalizedPath.includes('/projects/') || normalizedPath.includes('/projets/')) && 
-            normalizedPath !== '/en/projects/' && normalizedPath !== '/projets/') {
+        // Handle individual project pages (has a project name after /projects/)
+        if (normalizedPath.includes('/projects/') && 
+            !normalizedPath.endsWith('/projects/')) {
           // Extract the project name from the URL
           const urlParts = normalizedPath.split('/');
           const projectName = urlParts[urlParts.length - 1] || urlParts[urlParts.length - 2];
           
-          if (targetLang === 'fr') {
-            window.location.href = siteBaseUrl + `/projets/${projectName}`;
-          } else {
-            window.location.href = siteBaseUrl + `/en/projects/${projectName}`;
-          }
+          // Keep individual project pages at /projects/[name]
+          window.location.href = siteBaseUrl + `/projects/${projectName}`;
           return;
         }
         
@@ -60,11 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Handle project listing pages
         if (normalizedPath === '/projets/' || normalizedPath === '/en/projects/') {
-          if (targetLang === 'fr') {
-            window.location.href = siteBaseUrl + '/projets/';
-          } else {
-            window.location.href = siteBaseUrl + '/en/projects/';
-          }
+          // Always go to /projets/ for French, /en/projects/ for English
+          window.location.href = targetLang === 'fr' ? siteBaseUrl + '/projets/' : siteBaseUrl + '/en/projects/';
           return;
         }
         
