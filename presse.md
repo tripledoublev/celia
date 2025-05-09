@@ -8,6 +8,12 @@ identifier: press
 
 <ul class='press'>
     <li>
+        <a href="{{ site.baseurl }}/assets/press/CPS_VDA_276_Goulet_2024.pdf">
+            <img src="{{ site.baseurl }}/assets/img/press/CPS_VDA_276_Goulet_2024.webp" alt="VU 2022" width="100">
+            <p><i>Une magie de la chose : l'étude du spectre chez Celia Perrin Sidarous</i>, Charles-Antoine Goulet, VIE DES ARTS 276, 2024</p>
+        </a>
+    </li>
+    <li>
         <a href="{{ site.baseurl }}/assets/press/01_CPS_Eclaireuses_Dominique_Sirois-Rouleau_Celia_Perrin_Sidarous_VU_2022.pdf">
             <img src="{{ site.baseurl }}/assets/img/press/VU_2022.webp" alt="VU 2022" width="100">
             <p><i>L'éternel retour de Celia Perrin Sidarous</i>, Dominique Sirois Rouleau, VU 2022</p>
