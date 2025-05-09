@@ -1,0 +1,61 @@
+{% assign current_lang = page.lang | default: site.default_lang %}
+<!DOCTYPE html>
+<html lang="{{ current_lang }}">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ 'global.title' | t }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/fonts.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/project.css">
+
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/language-switcher.js"></script>
+    {% include head.html %}
+</head>
+
+<body>
+    {% include nav.html %}
+
+    <div class="page-content fade-in">
+        <div class="project-header">
+            <img src="{{ site.baseurl }}/{{ page.header_image }}" alt="{{ page.title }}">
+        </div>
+      
+        <div class="project-description">
+            <h2>
+                {{ page.title }}
+            </h2>
+
+            {{ content }}
+        </div>
+        <div class="project-gallery">
+            {% for image in page.gallery %}
+            <div class="gallery-item">
+                {% if image.type == "pdf" and image.pdf_src %}
+                <img src="{{ image.src }}" alt="{{ image.caption }}" data-type="pdf" data-pdf="{{ image.pdf_src }}">
+                {% else %}
+                <img src="{{ image.src }}" alt="{{ image.caption }}" data-caption="{{ image.caption }}" data-type="image">
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        
+        
+    </div>
+
+    <div id="fullscreen-overlay" class="d-none">
+        <span id="prev-image" class="nav-icon">&lt;</span>
+        <img id="fullscreen-image" src="" alt="">
+        <iframe id="fullscreen-pdf" src="" class="d-none" frameborder="0"></iframe>
+        <span id="next-image" class="nav-icon">&gt;</span>
+        <div id="fullscreen-caption">
+            <p id="fullscreen-caption-text"></p>
+        </div>
+        <button id="close-overlay">X</button>
+    </div>
+    <script defer type="text/javascript" src="{{ site.baseurl }}/assets/js/project.js"></script>
+
+</body>
+
+</html>

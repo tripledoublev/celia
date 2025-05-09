@@ -1,0 +1,54 @@
+<div class="projects-container">
+  <div class="projects-list">
+    <ul class="project-list" style="margin-top:5rem;">
+      {% assign sorted_projects = site.projects | sort: 'year' | reverse %}
+      {% for project in sorted_projects %}
+      {% assign first_year = project.year | split: '-' | first %}
+      <li>
+        <h2>
+          <a href="{{ site.baseurl }}{{ project.url }}" 
+             class="project-link" 
+             data-project="{{ project.title }}">
+            {{ project.title }} ({{ project.year }})
+          </a>
+        </h2>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="projects-preview">
+    {% assign sorted_projects = site.projects | sort: 'year' | reverse %}
+    {% for project in sorted_projects %}
+      <img src="{{ site.baseurl }}/{{ project.header_image }}" 
+           class="project-preview-image" 
+           alt="{{ project.title }}"
+           data-project="{{ project.title }}">
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const projectLinks = document.querySelectorAll('.project-link');
+  const previewImages = document.querySelectorAll('.project-preview-image');
+  
+  projectLinks.forEach(link => {
+    link.addEventListener('mouseenter', function() {
+      const projectTitle = this.dataset.project;
+      previewImages.forEach(img => {
+        if (img.dataset.project === projectTitle) {
+          img.classList.add('active');
+        } else {
+          img.classList.remove('active');
+        }
+      });
+    });
+    
+    link.addEventListener('mouseleave', function() {
+      previewImages.forEach(img => {
+        img.classList.remove('active');
+      });
+    });
+  });
+});
+</script>

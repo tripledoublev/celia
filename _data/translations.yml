@@ -1,0 +1,19 @@
+global:
+  fr:
+    title: "Celia Perrin Sidarous"
+    description: "Celia Perrin Sidarous est une artiste de l'image qui vit et travaille à Montréal."
+    keywords: "Celia Perrin Sidarous, art, photographie, artiste, Montréal"
+  en:
+    title: "Celia Perrin Sidarous"
+    description: "Celia Perrin Sidarous is an image-based artist living and working in Montréal."
+    keywords: "Celia Perrin Sidarous, art, photography, artist, Montreal"
+
+navigation:
+  fr:
+    projects: "Projets"
+    press: "Presse"
+    bio: "Bio"
+  en:
+    projects: "Projects"
+    press: "Press"
+    bio: "Bio" 

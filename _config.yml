@@ -21,13 +21,20 @@
 title: Celia Perrin Sidarous
 email: madamecelia@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Celia Perrin Sidarous est une artiste de l’image qui vit et travaille à Montréal.
+  Celia Perrin Sidarous est une artiste de l'image qui vit et travaille à Montréal.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.celia-perrin-sidarous.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  madamecelia
 
+# Default language
+default_lang: fr
+
 # Build settings
 theme: minima
+
+collections:
+  projects:
+    output: true
 
 
 
