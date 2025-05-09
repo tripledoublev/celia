@@ -9,7 +9,7 @@ identifier: press
 <ul class='press'>
     <li>
         <a href="{{ site.baseurl }}/assets/press/CPS_VDA_276_Goulet_2024.pdf">
-            <img src="{{ site.baseurl }}/assets/img/press/CPS_VDA_276_Goulet_2024.webp" alt="VU 2022" width="100">
+            <img src="{{ site.baseurl }}/assets/img/press/CPS_VDA_276_Goulet_2024.webp" alt="Vie des arts, 2024" width="100">
             <p><i>Une magie de la chose : l'étude du spectre chez Celia Perrin Sidarous</i>, Charles-Antoine Goulet, VIE DES ARTS 276, 2024</p>
         </a>
     </li>
