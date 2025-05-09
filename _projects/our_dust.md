@@ -55,6 +55,4 @@ Ceremonial. Equally eternal.
 Yours sincerely, and always,
 Merray
 
-— Merray Michael Mina, texte rédigé à l’occasion de l’exposition Our Dust, Patel Brown Toronto, février 2024 
-
 — Merray Michael Mina, text written on the occasion of the exhibition Our Dust, Patel Brown Toronto, February 2024
