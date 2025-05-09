@@ -1,5 +1,31 @@
 # Instructions
 
+## Table des matières
+- [Mise à jour du CV](#mise-à-jour-du-cv)
+- [Mise à jour de la biographie](#mise-à-jour-de-la-biographie)
+- [Structure des dossiers](#structure-des-dossiers)
+  - [Organisation des projets](#organisation-des-projets)
+  - [Création d'un nouveau projet](#création-dun-nouveau-projet)
+  - [Utilisation de header_image](#utilisation-de-header_image)
+- [Gestion des médias](#gestion-des-médias)
+  - [Images de presse](#images-de-presse)
+  - [PDFs de presse](#pdfs-de-presse)
+  - [Structure des projets](#structure-des-projets)
+  - [Gestion des PDFs](#gestion-des-pdfs)
+  - [Ajout d'un PDF à la page presse](#ajout-dun-pdf-à-la-page-presse)
+    - [Préparation du PDF](#préparation-du-pdf)
+    - [Préparation de l'image](#préparation-de-limage)
+    - [Ajout à presse.md](#ajout-à-pressemd)
+- [Internationalisation](#internationalisation)
+  - [Structure des fichiers](#structure-des-fichiers)
+  - [Front Matter](#front-matter)
+  - [Guide d'internationalisation (i18n)](#guide-dinternationalisation-i18n)
+- [Fonctionnement des branches](#fonctionnement-des-branches)
+- [Formattage du texte en Markdown](#formattage-du-texte-en-markdown)
+- [Configuration du développement](#configuration-du-développement)
+- [Optimisation des images](#optimisation-des-images)
+- [Workflow de déploiement](#workflow-de-déploiement)
+
 ## Mise à jour du CV
 
 Pour mettre à jour le CV, il faut simplement ajouter le nouveau CV au format PDF dans le dossier `CV` situé dans le dossier `assets`
@@ -152,6 +178,43 @@ assets/img/projects/
   - Format : WebP
   - Dimensions recommandées : 800x1132 pixels (format A4)
   - Qualité : 80-85%
+
+### Ajout d'un PDF à la page presse
+
+Pour ajouter un nouveau PDF à la page presse :
+
+1. **Préparation du PDF**
+   - Placer le fichier PDF dans `assets/press/`
+   - Nommer le fichier de manière descriptive en minuscules (ex: `article-2024.pdf`)
+   - S'assurer que le PDF est de bonne qualité et optimisé
+
+2. **Préparation de l'image**
+   - Placer l'image de prévisualisation dans `assets/img/press/`
+   - Nommer l'image de manière cohérente (ex: `JOURNAL_2024.webp`)
+   - Format : WebP
+   - Dimensions recommandées : 100px de large
+
+3. **Ajout à presse.md**
+   - Ouvrir le fichier `presse.md`
+   - Ajouter une nouvelle entrée dans la liste `<ul class='press'>`
+   - Format d'entrée :
+   ```html
+   <li>
+       <a href="{{ site.baseurl }}/assets/press/nom-du-fichier.pdf">
+           <img src="{{ site.baseurl }}/assets/img/press/NOM_IMAGE.webp" alt="Description" width="100">
+           <p><i>Titre de l'article</i>, Auteur, JOURNAL Année</p>
+       </a>
+   </li>
+   ```
+   - Exemple :
+   ```html
+   <li>
+       <a href="{{ site.baseurl }}/assets/press/article-2024.pdf">
+           <img src="{{ site.baseurl }}/assets/img/press/JOURNAL_2024.webp" alt="JOURNAL 2024" width="100">
+           <p><i>Titre de l'article</i>, Nom de l'auteur, JOURNAL 2024</p>
+       </a>
+   </li>
+   ```
 
 ## Internationalisation
 
