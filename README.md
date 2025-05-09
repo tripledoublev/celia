@@ -136,6 +136,23 @@ assets/img/projects/
     └── captions.yml         # Sous-titres des images 
 ```
 
+### Gestion des PDFs
+
+#### PDFs de presse
+- Placer les fichiers PDF dans `assets/press/`
+- Nommage : descriptif et en minuscules
+- Format : PDF standard
+
+#### PDFs de projets
+- Créer un dossier `pdf` dans le dossier du projet : `assets/img/projects/nom-du-projet/pdf/`
+- Placer les fichiers PDF dans ce dossier
+- Nommage : descriptif et en minuscules
+- Pour chaque PDF, créer une image de prévisualisation :
+  - Nommer l'image `pdf.webp` et la placer dans le dossier du projet
+  - Format : WebP
+  - Dimensions recommandées : 800x1132 pixels (format A4)
+  - Qualité : 80-85%
+
 ## Internationalisation
 
 ### Structure des fichiers
